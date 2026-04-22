@@ -1,39 +1,22 @@
 import streamlit as st
-
-st.markdown(
-    """
-    <style>
-    div.stButton > button {
-        border-radius: 28px;
-        background: linear-gradient(180deg, #ffffff 0%, #f4f5f7 100%);
-        border: 1px solid rgba(15, 23, 42, 0.16);
-        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
-        color: #101828;
-        padding: 0.9rem 1.6rem;
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 0.01em;
-        transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
-    }
-    div.stButton > button:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
-        background: #f7f8fb;
-    }
-    div.stButton > button:active {
-        transform: translateY(0);
-        background: #eef0f6;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.title("Figma-like button")
-st.write("Press the button below to show a message.")
-
-if st.button("Show message"):
-    st.success("🎉 Nice! The message is now visible.")
+import pandas as pd
+import numpy as np
 
 
-st.iframe("https://docs.streamlit.io", height=600)
+with st.sidebar:
+    st.header("Sidebar")
+    st.write("This is the sidebar of the app.")
+    st.radio("Select a page", ["Page 1", "Page 2", "Page 3"], key="page_selection"  )
+
+st.write("This is the main page of the app.")
+
+if st.session_state.page_selection == "Page 1":
+    st.write("You are on Page 1.")
+elif st.session_state.page_selection == "Page 2":
+    st.write("You are on Page 2.")
+elif st.session_state.page_selection == "Page 3":
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg")
+    with col2:
+        st.image("https://upload.wikimedia.org/wikipedia/commons/0/06/Blue_merle_koolie_short_coat_heading_sheep_%28cropped%29.jpg")
