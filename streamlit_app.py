@@ -16,4 +16,6 @@ st.set_page_config(
     }
 )
 
-st.write("Ciaoo!")
+st.title("Ciaoo!")
+
+st.button("Cliccami")

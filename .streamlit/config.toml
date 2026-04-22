@@ -6,13 +6,13 @@ base = "dark"
 primaryColor = "#8A2BE2"
 
 # A very dark gray for the main background
-backgroundColor = "#1E1E1E"
+backgroundColor = "#3222a0"
 
 # A slightly lighter gray for the sidebar and widgets
-secondaryBackgroundColor = "#2D2D2D"
+secondaryBackgroundColor = "#b91414"
 
 # Off-white text for readability against the dark background
-textColor = "#E0E0E0"
+textColor = "#13ce4e"
 
 # Use a serif font for a more formal look
 font = "serif"
