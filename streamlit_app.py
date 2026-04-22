@@ -16,4 +16,4 @@ st.set_page_config(
     }
 )
 
-st.write
+st.write("Ciao!")
