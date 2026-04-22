@@ -16,7 +16,7 @@
 base = rgb(5, 33, 245)
 
 # Primary accent color.
-primaryColor = rgb(245, 5, 61)
+primaryColor = #f5053d
 
 # Background color of the app.
 backgroundColor = rgb(26, 24, 25)
