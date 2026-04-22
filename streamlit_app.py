@@ -3,8 +3,10 @@ from streamlit_gsheets import GSheetsConnection
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-public_url = st.secrets.connections.gsheets["spreadsheet"]
+spreadsheet_url = st.secrets.connections.gsheets["spreadsheet"]
 
-df = conn.read(spreadsheet=st.secrets.connections.gsheets["spreadsheet"])
+st.write(f"Reading data from spreadsheet: {spreadsheet_url}")
 
+df = conn.read(spreadsheet=spreadsheet_url)
+ 
 st.dataframe(df)
