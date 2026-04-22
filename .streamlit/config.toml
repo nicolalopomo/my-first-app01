@@ -1,22 +1,18 @@
 [theme]
+# Set the base to dark mode
+base = "dark"
 
-# The theme that your custom theme inherits from.
-#
-# This can be one of the following:
-# - "light": Streamlit's default light theme.
-# - "dark" : Streamlit's default dark theme.
-# - A local file path to a TOML theme file: A local custom theme, like
-#   "themes/custom.toml".
-# - A URL to a TOML theme file: An externally hosted custom theme, like
-#   "https://example.com/theme.toml".
-#
-# A TOML theme file must contain a [theme] table with theme options.
-# Any theme options defined in the app's config.toml file will override
-# those defined in the TOML theme file.
-base = rgb(5, 33, 245)
+# A custom purple accent color
+primaryColor = "#8A2BE2"
 
-# Primary accent color.
-primaryColor = #f5053d
+# A very dark gray for the main background
+backgroundColor = "#1E1E1E"
 
-# Background color of the app.
-backgroundColor = rgb(26, 24, 25)
+# A slightly lighter gray for the sidebar and widgets
+secondaryBackgroundColor = "#2D2D2D"
+
+# Off-white text for readability against the dark background
+textColor = "#E0E0E0"
+
+# Use a serif font for a more formal look
+font = "serif"
